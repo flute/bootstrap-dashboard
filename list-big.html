@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="./static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./static/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./static/css/ickeck/grey.css">
+    <link rel="stylesheet" href="./static/css/app.css">
+	<title>后台模板</title>
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<!-- header -->
+			<div class="col-md-12 header-bg Blue-Grey">
+				<div class="header">
+					<div class="header-title left">
+						后台管理系统
+					</div>
+					<button class="btn btn-default btn-sm" id="change-theme" style="margin-left:50px">换肤</button>
+					<div class="dropdown right header-right ">
+						<span id="dropdownMenu" data-toggle="dropdown">赵信
+							<i class="fa fa-caret-down"></i>
+						</span>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="dropdownMenu">
+							<li role="presentation">
+								<a role="menuitem" tabindex="-1" href="#"><i class="fa fa-cog fa-fw"></i>&nbsp;设置</a>
+							</li>
+							<li role="presentation">
+								<a role="menuitem" tabindex="-1" href="#"><i class="fa fa-power-off fa-fw"></i>&nbsp;注销</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- body -->
+			<div class="col-md-12 no-spacing">
+				<div class="content">
+					<!-- aside -->
+					<div class="aside shadow-4dp">
+						<ul class="nav nav-list">
+							<li>
+								<a href="index.html">
+									<i class="fa fa-camera-retro fa-lg fa-fw"></i>
+									<span class="menu-text"> 说明 </span>
+								</a>
+							</li>
+							<li class="open">
+								<a href="#" class="dropdown-toggle">
+									<i class="fa fa-calendar fa-lg fa-fw"></i>
+									<span class="menu-text"> 表单样式 </span>
+									<b class="fa fa-chevron-right"></b><b class="fa fa-chevron-down"></b>
+								</a>
+								<ul class="submenu">
+									<li>
+										<a href="input.html">
+											表单
+										</a>
+									</li>
+									<li>
+										<a href="datetimepicker.html">
+											datetimepicker
+										</a>
+									</li>
+									<li>
+										<a href="multiselect.html">
+											Multiselect
+										</a>
+									</li>
+									<li>
+										<a href="icheck.html">
+											icheck
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li class="open active">
+								<a href="#" class="dropdown-toggle">
+									<i class="fa fa-archive fa-lg fa-fw"></i>
+									<span class="menu-text"> 列表 </span>
+									<b class="fa fa-chevron-right"></b><b class="fa fa-chevron-down"></b>
+								</a>
+								<ul class="submenu">
+									<li class="active">
+										<a href="list-big.html">
+											大图列表
+										</a>
+									</li>
+
+									<li>
+										<a href="list.html">
+											详情列表
+										</a>
+									</li>
+									<li>
+										<a href="list-change.html">
+											切换
+										</a>
+									</li>
+								</ul>
+							</li>
+
+							<li class="open">
+								<a href="#" class="dropdown-toggle">
+									<i class="fa fa-edit fa-lg fa-fw"></i>
+									<span class="menu-text"> 组件 </span>
+									<b class="fa fa-chevron-right"></b><b class="fa fa-chevron-down"></b>
+								</a>
+								<ul class="submenu">
+									<li>
+										<a href="modal.html">
+											模态窗
+										</a>
+									</li>
+									<li>
+										<a href="messenger.html">
+											Messenger
+										</a>
+									</li>
+									<li>
+										<a href="paginator.html">
+											paginator
+										</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<!-- 最小化菜单 -->
+						<p class="mini">
+							<i class="fa fa-angle-double-left"></i>
+							<i class="fa fa-angle-double-right"></i>
+						</p>
+					</div>
+					
+					
+					<!-- content -->
+					<div class="main-content">
+						<h3>横向列表</h3>
+						<div class="row">
+						    <div class="info-box col-sm-4 col-md-2">
+						        <div class="thumbnail shadow-2dp">
+						            <img src="./static/img/box-img.jpeg">
+						                <div class="caption">
+						                    <p class="caption-title">救援地图</p>
+						                    <p class="align-center">
+						                    	<input type="checkbox" class="list-checkbox">
+						                    </p>
+						                </div>
+						            </img>
+						        </div>
+						    </div>
+						    <div class="info-box col-sm-4 col-md-2">
+						        <div class="thumbnail shadow-2dp">
+						            <img src="./static/img/box-img.jpeg">
+						                <div class="caption">
+						                    <p class="caption-title">反馈管理</p>
+						                    <p class="align-center">
+						                    	<input type="checkbox" class="list-checkbox">
+						                    </p>
+						                </div>
+						            </img>
+						        </div>
+						    </div>
+						    <div class="info-box col-sm-4 col-md-2">
+						        <div class="thumbnail shadow-2dp">
+						            <img src="./static/img/box-img.jpeg">
+						                <div class="caption">
+						                    <p class="caption-title">任务管理</p>
+						                    <p class="align-center">
+						                    	<input type="checkbox" class="list-checkbox">
+						                    </p>
+						                </div>
+						            </img>
+						        </div>
+						    </div>
+						</div>
+						<h3>纵向列表</h3>
+						<div class="row">
+							<!-- 第1列 -->
+							<div class="info-box col-sm-4 col-md-2">
+								<div class="thumbnail shadow-2dp">
+						            <img src="./static/img/box-img.jpeg">
+						                <div class="caption">
+						                    <p class="caption-title">第1列</p>
+						                    <p class="align-center">
+						                    	<input type="checkbox" class="list-checkbox">
+						                    </p>
+						                </div>
+						            </img>
+						        </div>
+						        <div class="thumbnail shadow-2dp">
+						            <img src="./static/img/box-img.jpeg">
+						                <div class="caption">
+						                    <p class="caption-title">第1列</p>
+						                    <p class="align-center">
+						                    	<input type="checkbox" class="list-checkbox">
+						                    </p>
+						                </div>
+						            </img>
+						        </div>
+						        <div class="thumbnail shadow-2dp">
+						            <img src="./static/img/box-img.jpeg">
+						                <div class="caption">
+						                    <p class="caption-title">第1列</p>
+						                    <p class="align-center">
+						                    	<input type="checkbox" class="list-checkbox">
+						                    </p>
+						                </div>
+						            </img>
+						        </div>
+							</div>
+							<!-- 第2列 -->
+							<div class="info-box col-sm-4 col-md-2">
+								<div class="thumbnail shadow-2dp">
+						            <img src="./static/img/box-img.jpeg">
+						                <div class="caption">
+						                    <p class="caption-title">第2列</p>
+						                    <p class="align-center">
+						                    	<input type="checkbox" class="list-checkbox">
+						                    </p>
+						                </div>
+						            </img>
+						        </div>
+							</div>
+							<!-- 第3列 -->
+							<div class="info-box col-sm-4 col-md-2">
+								<div class="thumbnail shadow-2dp">
+						            <img src="./static/img/box-img.jpeg">
+						                <div class="caption">
+						                    <p class="caption-title">第3列</p>
+						                    <p class="align-center">
+						                    	<input type="checkbox" class="list-checkbox">
+						                    </p>
+						                </div>
+						            </img>
+						        </div>
+						        <div class="thumbnail shadow-2dp">
+						            <img src="./static/img/box-img.jpeg">
+						                <div class="caption">
+						                    <p class="caption-title">第3列</p>
+						                    <p class="align-center">
+						                    	<input type="checkbox" class="list-checkbox">
+						                    </p>
+						                </div>
+						            </img>
+						        </div>
+							</div>
+							<!-- ... -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="./static/js/jquery.min.js"></script>
+	<script src="./static/js/bootstrap.min.js"></script>
+	<script src="./static/js/icheck/icheck.min.js"></script>
+	<script src="./static/js/app.js"></script>
+<script type="text/javascript">  
+$(document).ready(function(){
+	$('input').iCheck({
+        checkboxClass: 'icheckbox_minimal-grey',
+        radioClass: 'iradio_minimal-grey',
+        increaseArea: '20%' // optional
+    });
+})
+</script> 
+</body>
+</html>

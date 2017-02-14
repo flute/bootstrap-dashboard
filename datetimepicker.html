@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="./static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./static/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./static/css/datetimepicker/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="./static/css/app.css">
+	<title>后台模板</title>
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<!-- header -->
+			<div class="col-md-12 header-bg Blue-Grey">
+				<div class="header">
+					<div class="header-title left">
+						后台管理系统
+					</div>
+					<button class="btn btn-default btn-sm" id="change-theme" style="margin-left:50px">换肤</button>
+					<div class="dropdown right header-right ">
+						<span id="dropdownMenu" data-toggle="dropdown">赵信
+							<i class="fa fa-caret-down"></i>
+						</span>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="dropdownMenu">
+							<li role="presentation">
+								<a role="menuitem" tabindex="-1" href="#"><i class="fa fa-cog fa-fw"></i>&nbsp;设置</a>
+							</li>
+							<li role="presentation">
+								<a role="menuitem" tabindex="-1" href="#"><i class="fa fa-power-off fa-fw"></i>&nbsp;注销</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- body -->
+			<div class="col-md-12 no-spacing">
+				<div class="content">
+					<!-- aside -->
+					<div class="aside shadow-4dp">
+						<ul class="nav nav-list">
+							<li>
+								<a href="index.html">
+									<i class="fa fa-camera-retro fa-lg fa-fw"></i>
+									<span class="menu-text"> 说明 </span>
+								</a>
+							</li>
+							<li class="open active">
+								<a href="#" class="dropdown-toggle">
+									<i class="fa fa-calendar fa-lg fa-fw"></i>
+									<span class="menu-text"> 表单样式 </span>
+									<b class="fa fa-chevron-right"></b><b class="fa fa-chevron-down"></b>
+								</a>
+								<ul class="submenu">
+									<li>
+										<a href="input.html">
+											表单
+										</a>
+									</li>
+									<li class="active">
+										<a href="datetimepicker.html">
+											datetimepicker
+										</a>
+									</li>
+									<li>
+										<a href="multiselect.html">
+											Multiselect
+										</a>
+									</li>
+									<li>
+										<a href="icheck.html">
+											icheck
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li class="open">
+								<a href="#" class="dropdown-toggle">
+									<i class="fa fa-archive fa-lg fa-fw"></i>
+									<span class="menu-text"> 列表 </span>
+									<b class="fa fa-chevron-right"></b><b class="fa fa-chevron-down"></b>
+								</a>
+								<ul class="submenu">
+									<li>
+										<a href="list-big.html">
+											大图列表
+										</a>
+									</li>
+
+									<li>
+										<a href="list.html">
+											详情列表
+										</a>
+									</li>
+									<li>
+										<a href="list-change.html">
+											切换
+										</a>
+									</li>
+								</ul>
+							</li>
+
+							<li class="open">
+								<a href="#" class="dropdown-toggle">
+									<i class="fa fa-edit fa-lg fa-fw"></i>
+									<span class="menu-text"> 组件 </span>
+									<b class="fa fa-chevron-right"></b><b class="fa fa-chevron-down"></b>
+								</a>
+								<ul class="submenu">
+									<li>
+										<a href="modal.html">
+											模态窗
+										</a>
+									</li>
+									<li>
+										<a href="messenger.html">
+											Messenger
+										</a>
+									</li>
+									<li>
+										<a href="paginator.html">
+											paginator
+										</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<!-- 最小化菜单 -->
+						<p class="mini">
+							<i class="fa fa-angle-double-left"></i>
+							<i class="fa fa-angle-double-right"></i>
+						</p>
+					</div>
+					
+					
+					<!-- content -->
+					<div class="main-content">
+						<div class="row">
+							<div class="item shadow-2dp">
+								<div style="display:inline-block;margin-right:50px">
+									<h4>datepicker：</h4>
+									<p>可输入、图标不可点：</p>
+								    <div class="input-group" style="width: 300px;">
+										<input class="form-control datepicker" type="text" placeholder="选择时间">
+										<span class="input-group-addon">
+											<i class="fa fa-calendar"></i>
+										</span>
+									</div>
+									<br>
+									<p>不可输入、图标可点：</p>
+									<div class="input-group date form_date" style="width: 300px;">
+									    <input class="form-control" type="text" readonly placeholder="选择时间">
+									    <span class="input-group-addon add-on pointer"><i class="fa fa-calendar"></i></span>
+									</div>
+									<br>
+									<p>不可输入、无图标：</p>
+									<div class="input-group" style="width: 300px;">
+										<input class="form-control datepicker" type="text" readonly placeholder="选择时间">
+									</div>
+								</div>
+								<div style="display:inline-block;">
+									<h4>datetimepicker：</h4>
+									<p>可输入、图标不可点：</p>
+								    <div class="input-group" style="width: 300px;">
+										<input class="form-control datetime" type="text" placeholder="选择时间">
+										<span class="input-group-addon">
+											<i class="fa fa-calendar"></i>
+										</span>
+									</div>
+									<br>
+									<p>不可输入、图标可点：</p>
+									<div class="input-group date form_datetime" style="width: 300px;">
+									    <input class="form-control" type="text" readonly placeholder="选择时间">
+									    <span class="input-group-addon add-on pointer"><i class="fa fa-calendar"></i></span>
+									</div>
+									<br>
+									<p>不可输入、无图标：</p>
+									<div class="input-group" style="width: 300px;">
+										<input class="form-control datetime" type="text" readonly placeholder="选择时间">
+									</div>
+								</div>
+								<pre style="margin-top:30px">
+$('.datetimepicker').datetimepicker({
+    format: 'yyyy-mm-dd hh:ii:00',
+    language: 'zh-CN',
+    autoclose: true,
+    startView: 2,//开始视图
+    minView: 1,  //精确到的层级
+    
+});
+
+<b>startView：</b>
+日期时间选择器打开之后首先显示的视图，默认值：2, 'month'。 可接受的值：
+0 or 'hour' for the hour view
+1 or 'day' for the day view
+2 or 'month' for month view (the default)
+3 or 'year' for the 12-month overview
+4 or 'decade' for the 10-year overview. Useful for date-of-birth datetimepickers.
+
+<b>minView</b>
+日期时间选择器所能够提供的最精确的时间选择视图，默认值：0, 'hour'。
+
+<b>maxView</b>
+日期时间选择器最高能展示的选择范围视图，默认值：4, 'decade'。
+
+
+								</pre>
+								<div style="margin-top: 30px">
+									<p style="line-height:30px;">css引入：</p> 
+									<code>bootstrap-datetimepicker.min.css</code>
+									<p style="line-height:30px;">js引入： </p> 
+									<code>bootstrap-datetimepicker.min.js 、 bootstrap-datetimepicker.zh-CN.js</code>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="./static/js/jquery.min.js"></script>
+	<script src="./static/js/bootstrap.min.js"></script>
+	<script src="./static/js/datetimepicker/bootstrap-datetimepicker.min.js"></script>
+	<script src="./static/js/datetimepicker/bootstrap-datetimepicker.zh-CN.js"></script>
+	<script src="./static/js/app.js"></script>
+<script type="text/javascript">  
+/**
+ * 时间选择插件bootstrap-datetimepicker
+ */
+$('.datepicker').datetimepicker({
+    format: 'yyyy-mm-dd',
+    language: 'zh-CN',
+    autoclose: true,
+    minView: 2,
+    startView: 2
+});
+$(".form_date").datetimepicker({
+	language: 'zh-CN',
+    format: 'yyyy-mm-dd',
+    autoclose: true,
+    minView: 2,
+    startView: 2,
+    pickerPosition: "bottom-left"
+});
+$('.datetime').datetimepicker({
+    format: 'yyyy-mm-dd hh:ii:00',
+    language: 'zh-CN',
+    autoclose: true,
+    minView: 0,
+    startView: 1
+});
+$(".form_datetime").datetimepicker({
+	language: 'zh-CN',
+    format: 'yyyy-mm-dd hh:ii:00',
+    autoclose: true,
+    minView: 0,
+    startView: 1,
+    pickerPosition: "bottom-left"
+});
+</script>  
+</body>
+</html>

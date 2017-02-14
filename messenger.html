@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="./static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./static/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./static/css/messenger/messenger.css">
+    <link rel="stylesheet" href="./static/css/messenger/messenger-theme-flat.css">
+    <link rel="stylesheet" href="./static/css/app.css">
+	<title>后台模板</title>
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<!-- header -->
+			<div class="col-md-12 header-bg Blue-Grey">
+				<div class="header">
+					<div class="header-title left">
+						后台管理系统
+					</div>
+					<button class="btn btn-default btn-sm" id="change-theme" style="margin-left:50px">换肤</button>
+					<div class="dropdown right header-right ">
+						<span id="dropdownMenu" data-toggle="dropdown">赵信
+							<i class="fa fa-caret-down"></i>
+						</span>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="dropdownMenu">
+							<li role="presentation">
+								<a role="menuitem" tabindex="-1" href="#"><i class="fa fa-cog fa-fw"></i>&nbsp;设置</a>
+							</li>
+							<li role="presentation">
+								<a role="menuitem" tabindex="-1" href="#"><i class="fa fa-power-off fa-fw"></i>&nbsp;注销</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- body -->
+			<div class="col-md-12 no-spacing">
+				<div class="content">
+					<!-- aside -->
+					<div class="aside shadow-4dp">
+						<ul class="nav nav-list">
+							<li>
+								<a href="index.html">
+									<i class="fa fa-camera-retro fa-lg fa-fw"></i>
+									<span class="menu-text"> 说明 </span>
+								</a>
+							</li>
+							<li class="open">
+								<a href="#" class="dropdown-toggle">
+									<i class="fa fa-calendar fa-lg fa-fw"></i>
+									<span class="menu-text"> 表单样式 </span>
+									<b class="fa fa-chevron-right"></b><b class="fa fa-chevron-down"></b>
+								</a>
+								<ul class="submenu">
+									<li>
+										<a href="input.html">
+											表单
+										</a>
+									</li>
+									<li>
+										<a href="datetimepicker.html">
+											datetimepicker
+										</a>
+									</li>
+									<li>
+										<a href="multiselect.html">
+											Multiselect
+										</a>
+									</li>
+									<li>
+										<a href="icheck.html">
+											icheck
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li class="open">
+								<a href="#" class="dropdown-toggle">
+									<i class="fa fa-archive fa-lg fa-fw"></i>
+									<span class="menu-text"> 列表 </span>
+									<b class="fa fa-chevron-right"></b><b class="fa fa-chevron-down"></b>
+								</a>
+								<ul class="submenu">
+									<li>
+										<a href="list-big.html">
+											大图列表
+										</a>
+									</li>
+
+									<li>
+										<a href="list.html">
+											详情列表
+										</a>
+									</li>
+									<li>
+										<a href="list-change.html">
+											切换
+										</a>
+									</li>
+								</ul>
+							</li>
+
+							<li class="open active">
+								<a href="#" class="dropdown-toggle">
+									<i class="fa fa-edit fa-lg fa-fw"></i>
+									<span class="menu-text"> 组件 </span>
+									<b class="fa fa-chevron-right"></b><b class="fa fa-chevron-down"></b>
+								</a>
+								<ul class="submenu">
+									<li>
+										<a href="modal.html">
+											模态窗
+										</a>
+									</li>
+									<li class="active">
+										<a href="messenger.html">
+											Messenger
+										</a>
+									</li>
+									<li>
+										<a href="paginator.html">
+											paginator
+										</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<!-- 最小化菜单 -->
+						<p class="mini">
+							<i class="fa fa-angle-double-left"></i>
+							<i class="fa fa-angle-double-right"></i>
+						</p>
+					</div>
+					
+					
+					<!-- content -->
+					<div class="main-content">
+						<div class="row">
+							<div class="item shadow-2dp">
+								<p>
+									<button class="btn btn-sm btn-success">success</button>
+								</p>
+								<p>
+									<button class="btn btn-sm btn-danger">failed</button>
+								</p>
+								<p>
+									<b>弹窗位置</b>：
+								</p>
+								<div>
+									修改<code>Messenger.options.extraClasses</code>值即可<br>
+									左上：<code>extraClasses: 'messenger-fixed messenger-on-top messenger-on-left'</code><br>
+									中上：<code>extraClasses: 'messenger-fixed messenger-on-top'</code><br>
+									右上：<code>extraClasses: 'messenger-fixed messenger-on-top messenger-on-right'</code><br>
+									左下：<code>extraClasses: 'messenger-fixed messenger-on-bottom messenger-on-left'</code><br>
+									中下：<code>extraClasses: 'messenger-fixed messenger-on-bottom'</code><br>
+									右下：<code>extraClasses: 'messenger-fixed messenger-on-bottom messenger-on-right'</code>
+								</div>
+								<br>
+								<p>
+									<b>最多显示数量</b>：超过显示数量，旧的被销毁，显示新的。
+								</p>
+								<p>
+									增加 <code>maxMessages</code> 属性
+								</p>
+								<pre>
+Messenger.options = {
+    extraClasses: 'messenger-fixed messenger-on-top',
+    maxMessages: 5,
+    theme: 'flat'
+};
+								</pre>
+								<div style="margin-top: 30px">
+									<p style="line-height:30px;">css引入：</p> 
+									<code>messenger/messenger.css、messenger/messenger-theme-flat.css</code>
+									<p style="line-height:30px;">js引入： </p> 
+									<code>messenger/messenger.min.js、messenger/messenger-theme-flat.js</code>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="./static/js/jquery.min.js"></script>
+	<script src="./static/js/bootstrap.min.js"></script>
+	<script src="./static/js/messenger/messenger.min.js"></script>
+	<script src="./static/js/messenger/messenger-theme-flat.js"></script>
+	<script src="./static/js/app.js"></script>
+<script type="text/javascript">  
+//初始化组件
+Messenger.options = {
+    extraClasses: 'messenger-fixed messenger-on-top',
+    maxMessages: 5,
+    theme: 'flat'
+};
+//显示提示
+function showTips(msg,type){
+	if( type && type == 'error' ){
+		Messenger().post({
+			message: msg,//显示信息，支持HTML格式
+			type:'error',//type为error，显示红色，不设置type是默认显示绿色
+			hideAfter: 3,//自动消失时长，单位ms
+			hideOnNavigate: true,
+			showCloseButton: true//是否显示关闭按钮
+		}); 
+	}else{
+		Messenger().post({
+			message: msg,
+			hideAfter: 3,
+			hideOnNavigate: true,
+			showCloseButton: true
+		}); 
+	}
+    
+}
+//给按钮绑定点击事件
+$('.item p button').unbind('click').click(function(event) {
+	if( $(this).hasClass('btn-success') ){
+		showTips('点击了&nbsp;<code>success</code>&nbsp;按钮');
+	}else if( $(this).hasClass('btn-danger') ){
+		showTips('点击了&nbsp;<code>failed</code>&nbsp;按钮','error');
+	}
+});
+</script>  
+</body>
+</html>
